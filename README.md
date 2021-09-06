@@ -14,3 +14,15 @@ Based on the documentation available on the official site, there are 4 key sub-c
 Different authenticators control access to JupyterHub. The default one (PAM) uses the user accounts on the server where JupyterHub is running. If you use this, you will need to create a user account on the system for each user on your team. Using other authenticators, you can allow users to sign in with e.g. a GitHub account, or with any single-sign-on system your organization has.
 
 In this repository, there is a sample implementation for LDAP and SSO based Authentication and it corresponding integration with JupyterHub in a Kubernest Environment.
+
+# Installation of LDAP Authenticator for JupyterHub
+
+You can install it from pip with:
+'''
+pip install jupyterhub-ldapauthenticator
+'''
+
+...or using conda with:
+'''
+conda install -c conda-forge jupyterhub-ldapauthenticator
+'''
