@@ -18,11 +18,11 @@ In this repository, there is a sample implementation for LDAP and SSO based Auth
 # Installation of LDAP Authenticator for JupyterHub
 
 You can install it from pip with:
-'''
+```
 pip install jupyterhub-ldapauthenticator
-'''
+```
 
 ...or using conda with:
-'''
+```
 conda install -c conda-forge jupyterhub-ldapauthenticator
-'''
+```
