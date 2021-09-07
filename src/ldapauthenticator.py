@@ -13,3 +13,11 @@ class LDAPAuthenticator(Authenticator):
     Could be an IP or Host Name
     """
   )
+  server_port = Int(
+    config=True,
+    help="""
+    Port on which to contact the LDAP Server
+    
+    Defaults to '636' if 'use_ssl' is set , '389' otherwise.
+    """
+  )
