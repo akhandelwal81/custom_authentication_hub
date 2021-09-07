@@ -44,4 +44,5 @@ elif AUTH_METHOD == 'ldap':
     ]
 
     c.LDAPAuthenticator.lookup_dn = True
-    # OPTIMIZE:
+    c.JDAPAuthenticator.lookup_dn_search_filter = '({login_attr}={login})'
+    c.LDAPAuthenticator.allowed_groups = [f"CN={ALLOWED_FUNCTIONAL_GROUP}, ou=groups,ou=central admin, dc=xxx, dc=xxx,dc=xx,dc=xxx"]
